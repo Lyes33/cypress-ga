@@ -18,14 +18,14 @@ describe('example sauce demo', () => {
     cy.get('[data-test="username"]').type('standard_users')
     cy.get('[data-test="password"]').type('secret_sauces')
     cy.get('[data-test="login-button"]').click()
-    cy.get('[data-test="error"]').click()
+    cy.get('[data-test="error"]').should('be.visible')
   })
 
   it.skip('login failed', () => {
     cy.get('[data-test="username"]').type('standard_users')
     cy.get('[data-test="password"]').type('secret_sauces')
     cy.get('[data-test="login-button"]').click()
-    cy.get('[data-test="error"]').click()
+    cy.get('[data-test="error"]').should('be.visible')
   })
 
 
