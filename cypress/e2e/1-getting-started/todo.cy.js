@@ -10,7 +10,7 @@ describe('example sauce demo', () => {
    cy.get('[data-test="username"]').type('standard_user')
    cy.get('[data-test="password"]').type('secret_sauce')
    cy.get('[data-test="login-button"]').click()
-   cy.get('.title').contains('Products').should('be.visible')
+   cy.get('.title').contains('produit').should('be.visible')
    
   })
 
